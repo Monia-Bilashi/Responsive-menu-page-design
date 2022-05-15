@@ -1,0 +1,84 @@
+    @media only screen and (max-width: 600px) {
+        body {
+            background-color: rgb(180, 162, 162);
+        }
+        .container {
+            width: 95%;
+            background-color: rgb(216, 172, 222);
+        }
+        header {
+            height: 800px;
+            width: 100%;
+            background-color: rgb(216, 172, 222);
+        }
+        .top_header {
+            height: 80px;
+            width: 100%;
+            background-color: #fff;
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            justify-content: space-between;
+        }
+        .logo {
+            width: 25%;
+            height: 100%;
+            /* background-color: black; */
+        }
+        .logo img {
+            width: 100%;
+        }
+        .menu_bar {
+            width: 60%;
+            /* background-color: black; */
+        }
+        .menu_item {
+            width: 100%;
+            display: none;
+            position: absolute;
+            top: 9%;
+            left: -5%;
+            /* background-color: #fff; */
+        }
+        .menu_item nav ul {
+            float: right;
+            padding-right: 10px;
+            /* margin-top: 40px; */
+        }
+        .menu_item nav ul li {
+            display: inline;
+        }
+        .menu_item nav ul li a {
+            display: flex;
+            flex-direction: column;
+            color: black;
+            text-decoration: none;
+            text-transform: uppercase;
+            padding: 20px 25px;
+            background-color: rgb(159, 194, 238);
+        }
+        .menu_item nav ul li a:hover {
+            background-color: lightgray;
+            border-radius: 10px;
+        }
+        .togg {
+            width: 30px;
+            /* background-color: green; */
+            position: relative;
+            left: 85%;
+        }
+        .toggol_menu {
+            display: block;
+            position: relative;
+            top: 0%;
+            right: 0%;
+            left: 0%
+        }
+        .toggol_menu a i {
+            color: black;
+            font-size: 25px;
+        }
+        .togg:hover~.menu_item {
+            display: block;
+        }
+    }
